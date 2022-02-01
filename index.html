@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dojo Weather</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <h1>DojoWeather</h1>
+      <ul>
+        <li onclick="alertBox()">Burbank</li>
+        <li onclick="alertBox()">Chicago</li>
+        <li onclick="alertBox()">Dallas</li>
+      </ul>
+    </nav>
+    <!-- end nav -->
+    <div class="mainParent">
+      <main>
+    <!-- header -->
+        <header>
+          <h1>San Jose</h1>
+          <div class="headersDiv">
+            <p>show temperature in</p>
+            <select name="c-f" id="CF" onchange="Fselected(this)">
+                <option value="C">C</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+        </header>
+    <!-- header end -->
+    <!-- weather -->
+    <div class="weather">
+        <div class="weatherbox">
+            <h2>Today</h2>
+            <img src="./assets/some_rain.png" alt="rain">
+            <h3>some rain</h3>
+            <div class="tempbox">
+                <p class="red" id="firstRed">24°</p>
+                <p class="blue" id="firstBlue">18°</p>
+            </div>
+        </div>
+        <div class="weatherbox">
+            <h2>Tomorrow</h2>
+            <img src="./assets/some_sun.png" alt="sun">
+            <h3>some sun</h3>
+            <div class="tempbox">
+                <p class="red" id="secondRed">27°</p>
+                <p class="blue" id="secondBlue">19°</p>
+            </div>
+        </div>
+        <div class="weatherbox">
+            <h2>Fryday</h2>
+            <img src="./assets/some_clouds.png" alt="clouds">
+            <h3>some clouds</h3>
+            <div class="tempbox">
+                <p class="red" id="thirdRed">21°</p>
+                <p class="blue" id="thirdBlue">16°</p>
+            </div>
+        </div>
+        <div class="weatherbox">
+            <h2>Saterday</h2>
+            <img src="./assets/some_sun.png" alt="sun">
+            <h3>some sun</h3>
+            <div class="tempbox">
+                <p class="red" id="forthRed">26°</p>
+                <p class="blue" id="forthBlue">21°</p>
+            </div>
+        </div>
+    </div>
+    <!-- weather end -->
+</main>
+</div>
+<!-- cookies -->
+<div class="cookiesAlert" id="delete">
+    <img src="./assets/cookie.png" alt="cockie">
+    <div class="cookieInfo">
+        <h3>Stop! Cookie time</h3>
+        <p>We use cookies (sadly not the edible ones) to personalize content and ads,
+             to provide social media features and to alalyse our traffic <a href="#">Read more...</a></p>
+    </div>
+    <button onclick="deleted()">I Accept</button>
+</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
